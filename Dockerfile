@@ -4,6 +4,7 @@ FROM nvcr.io/ea-nvidia-ai-enterprise/tensorflow:21.02-tf1-py3
 # FROM nvcr.io/nvidia/tensorflow:21.05-tf1-py3
 
 RUN pip install jupyterlab_nvdashboard
+RUN wget  https://raw.githubusercontent.com/512innovation/bert-qa/main/01_bert_qa.ipynb
 
 COPY . /workspace
 
